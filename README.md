@@ -2,25 +2,27 @@
 
 Estrutura do projeto, seguindo as convenções do Go e boas práticas para serviços gRPC.
 
+```sh
 temperature-converter/
-├── proto/                       # Pasta para arquivos Protobuf
-│   ├── temperature.proto        # Definição do serviço e mensagens
-│   └── gen/                     # Códigos gerados pelo protoc
-│       └── go/                  # Arquivos Go gerados (não versionados)
+├── proto/
+│   ├── temperature.proto
+│   └── gen/
+│       └── go/
 │           ├── temperature.pb.go
 │           └── temperature_grpc.pb.go
-├── cmd/                         # Pasta para executáveis
-│   ├── server/                  # Servidor gRPC
+├── cmd/
+│   ├── server/
 │   │   └── main.go
-│   └── client/                  # Cliente gRPC
+│   └── client/
 │       └── main.go
-├── internal/                    # Código interno do projeto
-│   └── service/                # Implementação do serviço
+├── internal/
+│   └── service/
 │       └── temperature.go
-├── go.mod                       # Módulo Go
-├── go.sum                       # Dependências do módulo
-├── Makefile                     # Automação de tarefas (opcional)
-└── README.md                    # Documentação do projeto
+├── go.mod
+├── go.sum
+├── Makefile
+└── README.md
+```
 
 Comando para a geração dos arquivos temperature_grpc.pb.go, e temperature.pb.go:
 
