@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package temperature;
+
+option go_package = "github.com/marcosnasp/temperature-converter/proto/gen/go;temperature";
+
+enum Unit {
+  CELSIUS = 0;
+  FAHRENHEIT = 1;
+  KELVIN = 2;
+}
+
+service TemperatureConverter {
+  rpc Convert (ConversionRequest) returns (ConversionResponse) {}
+}
+
+message ConversionRequest {
+  double temperature = 1;
+  Unit from_unit = 2;
+  Unit to_unit = 3;
+}
+
+message ConversionResponse {
+  double temperature = 1;
+  Unit unit = 2;
+}
