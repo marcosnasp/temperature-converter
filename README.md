@@ -12,15 +12,15 @@ temperature-converter/
 ├── cmd/                         # Pasta para executáveis
 │   ├── server/                  # Servidor gRPC
 │   │   └── main.go
-│   └── client/                 # Cliente gRPC
+│   └── client/                  # Cliente gRPC
 │       └── main.go
 ├── internal/                    # Código interno do projeto
 │   └── service/                # Implementação do serviço
 │       └── temperature.go
-├── go.mod                      # Módulo Go
-├── go.sum                      # Dependências do módulo
-├── Makefile                    # Automação de tarefas (opcional)
-└── README.md                   # Documentação do projeto
+├── go.mod                       # Módulo Go
+├── go.sum                       # Dependências do módulo
+├── Makefile                     # Automação de tarefas (opcional)
+└── README.md                    # Documentação do projeto
 
 Comando para a geração dos arquivos temperature_grpc.pb.go, e temperature.pb.go:
 
